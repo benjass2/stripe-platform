@@ -1,0 +1,6 @@
+@PC2.U202422816.Stripe.Platform_HostAddress = http://localhost:5288
+
+GET {{PC2.U202422816.Stripe.Platform_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
