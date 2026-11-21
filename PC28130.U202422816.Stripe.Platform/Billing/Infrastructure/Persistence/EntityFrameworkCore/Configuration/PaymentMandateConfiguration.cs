@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using PC2.U202422816.Stripe.Platform.Billing.Domain.Model.ValueObjects;
+using PC28130.U202422816.Stripe.Platform.Billing.Domain.Model.ValueObjects;
 using PC28130.U202422816.Stripe.Platform.Billing.Domain.Model.Aggregates;
 
-namespace PC2.U202422816.Stripe.Platform.Billing.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
+namespace PC28130.U202422816.Stripe.Platform.Billing.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
 
 public class PaymentMandateConfiguration : IEntityTypeConfiguration<PaymentMandate>
 {

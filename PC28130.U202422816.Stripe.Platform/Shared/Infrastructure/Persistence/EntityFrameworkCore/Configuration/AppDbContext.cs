@@ -1,3 +1,4 @@
+using PC28130.U202422816.Stripe.Platform.Billing.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
 using Microsoft.EntityFrameworkCore;
 using PC28130.U202422816.Stripe.Platform.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using PC28130.U202422816.Stripe.Platform.Shared.Infrastructure.Persistence.EntityFrameworkCore.Interceptors;
@@ -24,6 +25,7 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
     {
         base.OnModelCreating(builder);
 
+        builder.ApplyConfiguration(new PaymentMandateConfiguration());
         builder.UseSnakeCaseNamingConvention();
     }
 }

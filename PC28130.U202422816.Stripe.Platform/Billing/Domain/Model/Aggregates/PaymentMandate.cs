@@ -1,4 +1,4 @@
-﻿using PC2.U202422816.Stripe.Platform.Billing.Domain.Model.ValueObjects;
+using PC28130.U202422816.Stripe.Platform.Billing.Domain.Model.ValueObjects;
 using PC28130.U202422816.Stripe.Platform.Shared.Domain.Model.Aggregates.Internal;
 using PC28130.U202422816.Stripe.Platform.Shared.Domain.Model.Entities;
 using PC28130.U202422816.Stripe.Platform.Shared.Domain.Model.ValueObjects;

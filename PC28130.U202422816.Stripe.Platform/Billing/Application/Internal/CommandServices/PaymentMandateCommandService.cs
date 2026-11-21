@@ -1,6 +1,6 @@
-﻿using PC2.U202422816.Stripe.Platform.Billing.Application.CommandServices;
-using PC2.U202422816.Stripe.Platform.Billing.Domain.Model.ValueObjects;
-using PC2.U202422816.Stripe.Platform.Billing.Domain.Repositories;
+using PC28130.U202422816.Stripe.Platform.Billing.Application.CommandServices;
+using PC28130.U202422816.Stripe.Platform.Billing.Domain.Model.ValueObjects;
+using PC28130.U202422816.Stripe.Platform.Billing.Domain.Repositories;
 using PC28130.U202422816.Stripe.Platform.Billing.Domain.Model.Aggregates;
 using PC28130.U202422816.Stripe.Platform.Billing.Domain.Model.Commands;
 using PC28130.U202422816.Stripe.Platform.Shared.Application.Model;
@@ -8,7 +8,7 @@ using PC28130.U202422816.Stripe.Platform.Shared.Domain.Model.Errors;
 using PC28130.U202422816.Stripe.Platform.Shared.Domain.Model.ValueObjects;
 using PC28130.U202422816.Stripe.Platform.Shared.Domain.Repositories;
 
-namespace PC2.U202422816.Stripe.Platform.Billing.Application.Internal.CommandServices;
+namespace PC28130.U202422816.Stripe.Platform.Billing.Application.Internal.CommandServices;
 
 public class PaymentMandateCommandService(
     IPaymentMandateRepository paymentMandateRepository,
