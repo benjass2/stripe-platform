@@ -21,7 +21,11 @@ public static class ModelBuilderExtensions
             if (!string.IsNullOrEmpty(tableName)) entity.SetTableName(tableName.ToPlural().ToSnakeCase());
 
             foreach (var property in entity.GetProperties())
+            {
+                // Shared-table ownership keys must keep the owner column mapping.
+                if (entity.FindOwnership()?.Properties.Contains(property) == true) continue;
                 property.SetColumnName(property.GetColumnName().ToSnakeCase());
+            }
 
             foreach (var key in entity.GetKeys())
             {
